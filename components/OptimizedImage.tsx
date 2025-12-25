@@ -28,28 +28,45 @@ export default function OptimizedImage({
   style,
 }: OptimizedImageProps) {
   // Get basePath for GitHub Pages
-  // Next.js static export handles basePath automatically, but we need to ensure
-  // client-side paths are correct. We detect it from the current URL.
+  // Use a more reliable detection method that works on initial load
   const getBasePath = () => {
     if (typeof window !== 'undefined') {
+      // Check multiple ways to detect basePath
       const pathname = window.location.pathname
-      // If we're on GitHub Pages with base path, detect it
-      if (pathname.startsWith('/darna')) {
+      const href = window.location.href
+      
+      // If URL contains /darna/, we're on GitHub Pages
+      if (pathname.startsWith('/darna') || href.includes('/darna/')) {
         return '/darna'
       }
+      
+      // Also check if we're on GitHub Pages domain
+      if (window.location.hostname.includes('github.io')) {
+        // Extract repo name from pathname if it exists
+        const pathParts = pathname.split('/').filter(Boolean)
+        if (pathParts.length > 0 && pathParts[0] !== '') {
+          return `/${pathParts[0]}`
+        }
+      }
     }
-    // Default: no base path (local dev) or Next.js will handle it in production
+    // Default: no base path (local dev)
     return ''
   }
 
   const basePath = getBasePath()
   
   // Normalize image path for GitHub Pages basePath
-  // Next.js copies public folder to out folder, so paths should work with basePath
+  // Handle both absolute paths (/images/...) and ensure basePath is prepended correctly
   const normalizePath = (path: string) => {
-    // Remove leading slash if present, then add basePath
+    // Remove leading slash if present
     const cleanPath = path.startsWith('/') ? path.slice(1) : path
-    return basePath ? `${basePath}/${cleanPath}` : `/${cleanPath}`
+    
+    // If we have a basePath, prepend it; otherwise use absolute path
+    if (basePath) {
+      // Ensure no double slashes
+      return `${basePath}/${cleanPath}`.replace(/\/+/g, '/')
+    }
+    return `/${cleanPath}`
   }
 
   // Generate base path without extension
