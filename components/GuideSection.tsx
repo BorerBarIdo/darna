@@ -5,13 +5,13 @@ export default function GuideSection() {
   const guideImage = '/images/WhatsApp Image 2025-12-25 at 19.15.34.jpeg'
 
   return (
-    <section className="py-20 sm:py-24 md:py-32 bg-white">
+    <section className="py-24 sm:py-32 md:py-40 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16 lg:gap-20 items-center">
             {/* Image Side */}
             <div className="order-2 lg:order-1">
-              <div className="relative w-full h-[500px] sm:h-[600px] md:h-[700px] overflow-hidden">
+              <div className="relative w-full h-[500px] sm:h-[600px] md:h-[700px] overflow-hidden rounded-lg shadow-lg">
                 <Image
                   src={guideImage}
                   alt="טלי שורץ - המדריכה שלך למסע"
@@ -35,8 +35,8 @@ export default function GuideSection() {
               {/* Three Key Areas */}
               <div className="space-y-6 sm:space-y-8">
                 {/* הגוף - Body */}
-                <div>
-                  <h3 className="text-xl sm:text-2xl font-serif font-normal text-gray-900 mb-2 tracking-tight">
+                <div className="p-6 bg-white rounded-lg border border-gray-100 shadow-sm">
+                  <h3 className="text-xl sm:text-2xl font-serif font-normal text-gray-900 mb-3 tracking-tight">
                     הגוף:
                   </h3>
                   <p className="text-base sm:text-lg text-gray-600 leading-relaxed font-light">
@@ -45,8 +45,8 @@ export default function GuideSection() {
                 </div>
 
                 {/* הנפש - Soul/Mind */}
-                <div>
-                  <h3 className="text-xl sm:text-2xl font-serif font-normal text-gray-900 mb-2 tracking-tight">
+                <div className="p-6 bg-white rounded-lg border border-gray-100 shadow-sm">
+                  <h3 className="text-xl sm:text-2xl font-serif font-normal text-gray-900 mb-3 tracking-tight">
                     הנפש:
                   </h3>
                   <p className="text-base sm:text-lg text-gray-600 leading-relaxed font-light">
@@ -55,8 +55,8 @@ export default function GuideSection() {
                 </div>
 
                 {/* הרוח - Spirit */}
-                <div>
-                  <h3 className="text-xl sm:text-2xl font-serif font-normal text-gray-900 mb-2 tracking-tight">
+                <div className="p-6 bg-white rounded-lg border border-gray-100 shadow-sm">
+                  <h3 className="text-xl sm:text-2xl font-serif font-normal text-gray-900 mb-3 tracking-tight">
                     הרוח:
                   </h3>
                   <p className="text-base sm:text-lg text-gray-600 leading-relaxed font-light">

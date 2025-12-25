@@ -11,7 +11,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: #ffffff;
+  background: #fafafa;
   direction: rtl;
   font-family: 'Cormorant Garamond', Georgia, serif;
   -webkit-font-smoothing: antialiased;

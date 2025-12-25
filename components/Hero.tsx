@@ -15,7 +15,7 @@ export default function Hero() {
           className="object-cover"
           style={{ opacity: 0.5 }}
         />
-        <div className="absolute inset-0 bg-white/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-white/85 to-white/90"></div>
       </div>
 
       {/* Content */}
