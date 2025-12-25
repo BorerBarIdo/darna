@@ -30,7 +30,6 @@ export default function Hero() {
                 lineHeight: '0.9',
                 color: '#111827',
                 textShadow: '3px 3px 10px rgba(255,255,255,1), 0 0 25px rgba(255,255,255,0.9)',
-                WebkitTextShadow: '3px 3px 10px rgba(255,255,255,1), 0 0 25px rgba(255,255,255,0.9)',
                 display: 'block',
                 visibility: 'visible'
               }}>
@@ -48,7 +47,6 @@ export default function Hero() {
               fontWeight: 400,
               color: '#111827',
               textShadow: '3px 3px 10px rgba(255,255,255,1), 0 0 25px rgba(255,255,255,0.9)',
-              WebkitTextShadow: '3px 3px 10px rgba(255,255,255,1), 0 0 25px rgba(255,255,255,0.9)',
               display: 'block',
               visibility: 'visible'
             }}>
@@ -61,8 +59,7 @@ export default function Hero() {
                 fontStyle: 'italic',
                 fontWeight: 300,
                 color: '#1f2937',
-                textShadow: '2px 2px 6px rgba(255,255,255,1), 0 0 15px rgba(255,255,255,0.9)',
-                WebkitTextShadow: '2px 2px 6px rgba(255,255,255,1), 0 0 15px rgba(255,255,255,0.9)'
+                textShadow: '2px 2px 6px rgba(255,255,255,1), 0 0 15px rgba(255,255,255,0.9)'
               }}>
                 משחררים חוקי אכילה, דפוסי חשיבה ישנים ובוחרים בחופש
               </p>
