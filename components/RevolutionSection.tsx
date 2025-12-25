@@ -10,7 +10,7 @@ export default function RevolutionSection() {
 
           {/* Subtitle */}
           <p className="text-lg sm:text-xl md:text-2xl text-warm-800 mb-10 sm:mb-12 md:mb-16 text-center leading-relaxed max-w-4xl mx-auto font-light">
-            'נשמה וגוף' היא מהפכה תודעתית לירידה במשקל וחיים מתוך:
+            &apos;נשמה וגוף&apos; היא מהפכה תודעתית לירידה במשקל וחיים מתוך:
           </p>
 
           {/* Three Principles */}

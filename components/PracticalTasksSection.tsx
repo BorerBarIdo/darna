@@ -19,7 +19,7 @@ export default function PracticalTasksSection() {
               </div>
               
               <h3 className="text-xl sm:text-2xl font-serif font-semibold text-warm-900 mb-4 tracking-tight">
-                משימה פיזית - 'טיהור המקדש'
+                משימה פיזית - &apos;טיהור המקדש&apos;
               </h3>
               
               <ul className="space-y-3 text-warm-700 text-sm sm:text-base leading-relaxed font-light">
@@ -29,7 +29,7 @@ export default function PracticalTasksSection() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-warm-500 mt-1">✓</span>
-                  <span>אוספים את כל המזון המתועש ל'סלסילת הפרדה' אחת, ומניחים אותה מחוץ לטווח הראייה.</span>
+                  <span>אוספים את כל המזון המתועש ל&apos;סלסילת הפרדה&apos; אחת, ומניחים אותה מחוץ לטווח הראייה.</span>
                 </li>
               </ul>
             </div>
@@ -45,17 +45,17 @@ export default function PracticalTasksSection() {
               </div>
               
               <h3 className="text-xl sm:text-2xl font-serif font-semibold text-warm-900 mb-4 tracking-tight">
-                משימה רגשית - 'טיהור הלב'
+                משימה רגשית - &apos;טיהור הלב&apos;
               </h3>
               
               <ul className="space-y-3 text-warm-700 text-sm sm:text-base leading-relaxed font-light">
                 <li className="flex items-start gap-3">
                   <span className="text-warm-500 mt-1">✓</span>
-                  <span>כותבים על דף את כל ה'רעלים הרגשיים': פחדים, אשמה, סיפורים ישנים על הגוף.</span>
+                  <span>כותבים על דף את כל ה&apos;רעלים הרגשיים&apos;: פחדים, אשמה, סיפורים ישנים על הגוף.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-warm-500 mt-1">✓</span>
-                  <span>עורכים 'טקס שחרור': קורעים את הדף או שורפים אותו כסמל לניקוי.</span>
+                  <span>עורכים &apos;טקס שחרור&apos;: קורעים את הדף או שורפים אותו כסמל לניקוי.</span>
                 </li>
               </ul>
             </div>

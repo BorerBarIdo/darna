@@ -30,7 +30,7 @@ export default function SoulNourishmentSection() {
                 <li className="flex items-start gap-3">
                   <span className="text-warm-500 mt-1">•</span>
                   <span>
-                    נזהה 3 'חוקי אוכל' ישנים שמנהלים אותנו (למשל: 'חייבים לסיים מהצלחת').
+                    נזהה 3 &apos;חוקי אוכל&apos; ישנים שמנהלים אותנו (למשל: &apos;חייבים לסיים מהצלחת&apos;).
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
@@ -45,7 +45,7 @@ export default function SoulNourishmentSection() {
             {/* Daily Tool */}
             <div className="bg-white rounded-lg p-6 sm:p-8 border-r-4 border-warm-500">
               <h3 className="text-xl sm:text-2xl font-serif font-semibold text-warm-900 mb-4 tracking-tight">
-                הכלי היומי: מדיטציית 'מרחב חדש'
+                הכלי היומי: מדיטציית &apos;מרחב חדש&apos;
               </h3>
               <p className="text-warm-700 leading-relaxed font-light">
                 תרגול קצר (3 דקות) של נשימות, ויזואליזציה של אור מנקה והזרעת כוונה חדשה.

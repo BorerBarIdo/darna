@@ -22,7 +22,7 @@ export default function ResetProtocolSection() {
               
               <div className="space-y-3 text-warm-700 text-sm sm:text-base leading-relaxed font-light">
                 <p>
-                  מזון 'חי' מהטבע בלבד: ירקות, פירות, חלבון נקי, שומן איכותי.
+                  מזון &apos;חי&apos; מהטבע בלבד: ירקות, פירות, חלבון נקי, שומן איכותי.
                 </p>
                 <p className="font-medium text-warm-900">
                   העיקרון: אוכלים עד שובע נעים. אין ספירת קלוריות, יש דגש על איכות.
@@ -58,7 +58,7 @@ export default function ResetProtocolSection() {
               </div>
               
               <h3 className="text-xl sm:text-2xl font-serif font-semibold text-warm-900 mb-4 tracking-tight">
-                מה שותים ('הניקוז')?
+                מה שותים (&apos;הניקוז&apos;)?
               </h3>
               
               <p className="text-warm-700 text-sm sm:text-base leading-relaxed font-light">

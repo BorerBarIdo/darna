@@ -22,7 +22,7 @@ export default function JourneyBenefitsSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-semibold text-warm-900 mb-12 sm:mb-16 text-center tracking-tight">
-            מה עוד תקבלי/י במסע 'נשמה וגוף'?
+            מה עוד תקבלי/י במסע &apos;נשמה וגוף&apos;?
           </h2>
 
           <div className="space-y-4 sm:space-y-6">

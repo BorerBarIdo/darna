@@ -57,12 +57,14 @@ export default function ServicesSection() {
                 className="group cursor-pointer"
               >
                 <div className="relative aspect-square rounded-full overflow-hidden mb-4 sm:mb-5 shadow-md hover:shadow-xl transition-all duration-500">
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
+                  {service.image ? (
+                    <Image
+                      src={service.image}
+                      alt={service.title}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  ) : null}
                 </div>
                 <div className="text-center">
                   <h3 className="text-sm sm:text-base md:text-lg font-medium text-warm-900 mb-1">

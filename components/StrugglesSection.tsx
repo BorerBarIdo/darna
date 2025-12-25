@@ -23,7 +23,7 @@ export default function StrugglesSection() {
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-1 h-12 bg-warm-400 rounded-full mt-1"></div>
                 <p className="text-lg sm:text-xl md:text-2xl text-warm-900 leading-relaxed font-light">
-                  לדעת בדיוק מה 'צריך' לעשות, אבל להרגיש שהאכילה הרגשית תמיד משתלטת.
+                  לדעת בדיוק מה &apos;צריך&apos; לעשות, אבל להרגיש שהאכילה הרגשית תמיד משתלטת.
                 </p>
               </div>
             </div>

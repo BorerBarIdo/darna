@@ -30,14 +30,14 @@ export default function FirstStepSection() {
                 <div>
                   <p className="font-medium text-warm-900 mb-2">המסר המוביל:</p>
                   <p className="font-light italic">
-                    'כדי לבנות אמת חדשה, עלינו לפנות את הישנה – במקרר, בלב ובמחשבה.'
+                    &apos;כדי לבנות אמת חדשה, עלינו לפנות את הישנה – במקרר, בלב ובמחשבה.&apos;
                   </p>
                 </div>
                 
                 <div>
                   <p className="font-medium text-warm-900 mb-2">ההבטחה:</p>
                   <p className="font-light italic">
-                    'השבוע אנחנו מורידים את הרעש כדי להתחיל לשמוע את קול הנשמה והשובע האמיתי.'
+                    &apos;השבוע אנחנו מורידים את הרעש כדי להתחיל לשמוע את קול הנשמה והשובע האמיתי.&apos;
                   </p>
                 </div>
               </div>
