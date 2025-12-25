@@ -1,5 +1,7 @@
 'use client'
 
+import { getBasePath } from '@/lib/basePath'
+
 interface OptimizedImageProps {
   src: string
   alt: string
@@ -27,32 +29,7 @@ export default function OptimizedImage({
   sizes,
   style,
 }: OptimizedImageProps) {
-  // Get basePath for GitHub Pages
-  // Use a more reliable detection method that works on initial load
-  const getBasePath = () => {
-    if (typeof window !== 'undefined') {
-      // Check multiple ways to detect basePath
-      const pathname = window.location.pathname
-      const href = window.location.href
-      
-      // If URL contains /darna/, we're on GitHub Pages
-      if (pathname.startsWith('/darna') || href.includes('/darna/')) {
-        return '/darna'
-      }
-      
-      // Also check if we're on GitHub Pages domain
-      if (window.location.hostname.includes('github.io')) {
-        // Extract repo name from pathname if it exists
-        const pathParts = pathname.split('/').filter(Boolean)
-        if (pathParts.length > 0 && pathParts[0] !== '') {
-          return `/${pathParts[0]}`
-        }
-      }
-    }
-    // Default: no base path (local dev)
-    return ''
-  }
-
+  // Get basePath - this will detect from URL on client-side
   const basePath = getBasePath()
   
   // Normalize image path for GitHub Pages basePath
