@@ -4,9 +4,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // If your repository name is not 'darna', update this:
-  // basePath: '/darna',
-  // trailingSlash: true,
+  basePath: '/darna',
+  trailingSlash: true,
 }
 
 module.exports = nextConfig
