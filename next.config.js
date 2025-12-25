@@ -4,12 +4,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/darna',
+  // Only use basePath in production (GitHub Pages)
+  basePath: process.env.NODE_ENV === 'production' ? '/darna' : '',
   trailingSlash: true,
-  // Exclude admin and API routes from static export
-  async rewrites() {
-    return []
-  },
 }
 
 module.exports = nextConfig
