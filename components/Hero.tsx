@@ -25,12 +25,14 @@ export default function Hero() {
           <div className="mb-12 sm:mb-16">
             <div className="inline-block">
               <h1 className="text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] font-normal leading-none relative z-20 text-gray-900" style={{ 
-                fontFamily: "'Great Vibes', cursive",
+                fontFamily: "'Great Vibes', 'Brush Script MT', cursive",
                 fontWeight: 400,
                 lineHeight: '0.9',
                 color: '#111827',
                 textShadow: '3px 3px 10px rgba(255,255,255,1), 0 0 25px rgba(255,255,255,0.9)',
-                WebkitTextShadow: '3px 3px 10px rgba(255,255,255,1), 0 0 25px rgba(255,255,255,0.9)'
+                WebkitTextShadow: '3px 3px 10px rgba(255,255,255,1), 0 0 25px rgba(255,255,255,0.9)',
+                display: 'block',
+                visibility: 'visible'
               }}>
                 Darna
               </h1>
@@ -41,12 +43,14 @@ export default function Hero() {
           {/* Main Title */}
           <div className="space-y-8 sm:space-y-10 relative z-20">
             <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif font-normal leading-[1.1] tracking-wide relative z-20 text-gray-900" style={{
-              fontFamily: "'Playfair Display', serif",
+              fontFamily: "'Playfair Display', Georgia, serif",
               letterSpacing: '0.05em',
               fontWeight: 400,
               color: '#111827',
               textShadow: '3px 3px 10px rgba(255,255,255,1), 0 0 25px rgba(255,255,255,0.9)',
-              WebkitTextShadow: '3px 3px 10px rgba(255,255,255,1), 0 0 25px rgba(255,255,255,0.9)'
+              WebkitTextShadow: '3px 3px 10px rgba(255,255,255,1), 0 0 25px rgba(255,255,255,0.9)',
+              display: 'block',
+              visibility: 'visible'
             }}>
               נשמה וגוף
             </h2>
