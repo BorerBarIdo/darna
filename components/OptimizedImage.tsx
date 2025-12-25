@@ -36,8 +36,14 @@ export default function OptimizedImage({
   if (fill) {
     // For fill images (background images, full-width images)
     // These need to be wrapped in a container with position: relative
+    // Extract objectPosition from style if provided
+    const { objectPosition, ...imgStyle } = style || {}
+    const imgClassName = objectPosition 
+      ? `w-full h-full object-cover` 
+      : `w-full h-full object-cover`
+    
     return (
-      <picture className={`absolute inset-0 ${className}`} style={style}>
+      <picture className={`absolute inset-0 ${className}`}>
         {/* AVIF source - best compression */}
         <source
           srcSet={`${basePath}.avif`}
@@ -52,7 +58,8 @@ export default function OptimizedImage({
         <img
           src={src}
           alt={alt}
-          className="w-full h-full object-cover"
+          className={imgClassName}
+          style={{ ...imgStyle, objectPosition: objectPosition || 'center' }}
           loading={priority ? 'eager' : 'lazy'}
           decoding="async"
         />

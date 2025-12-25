@@ -12,9 +12,9 @@ export default function Hero() {
           alt="רקע"
           fill
           priority
-          style={{ opacity: 0.8 }}
+          style={{ opacity: 0.95, objectPosition: 'center bottom' }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-white/50 to-white/60"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-white/30 to-white/40"></div>
       </div>
 
       {/* Content */}
