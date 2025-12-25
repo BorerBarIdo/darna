@@ -5,13 +5,13 @@ export default function GuideSection() {
   const guideImage = '/images/WhatsApp Image 2025-12-25 at 19.15.34.jpeg'
 
   return (
-    <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-b from-white to-warm-50">
+    <section className="py-20 sm:py-24 md:py-32 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 md:gap-16 items-center">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16 md:gap-20 items-center">
             {/* Image Side */}
             <div className="order-2 lg:order-1">
-              <div className="relative w-full h-96 sm:h-[500px] md:h-[600px] overflow-hidden">
+              <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] overflow-hidden">
                 <Image
                   src={guideImage}
                   alt="טלי שורץ - המדריכה שלך למסע"
@@ -23,70 +23,53 @@ export default function GuideSection() {
             </div>
 
             {/* Text Side */}
-            <div className="order-1 lg:order-2">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-semibold text-warm-900 mb-6 sm:mb-8 tracking-tight">
+            <div className="order-1 lg:order-2 space-y-8 sm:space-y-10">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif font-normal text-gray-900 tracking-tight">
                 המדריכה שלך למסע
               </h2>
 
+              <p className="text-lg sm:text-xl text-gray-700 leading-relaxed font-light">
+                שמי טלי שורץ, ובמשך 26 שנות ניסיון אספתי ידע, כלים ואג&apos;נדות שעובדות. המסע שלי שילב בין העולמות כדי ליצור גישה שלמה:
+              </p>
+
+              {/* Three Key Areas */}
               <div className="space-y-6 sm:space-y-8">
-                <p className="text-base sm:text-lg md:text-xl text-warm-700 leading-relaxed">
-                  שמי טלי שורץ, ובמשך 26 שנות ניסיון אספתי ידע, כלים ואג&apos;נדות שעובדות. המסע שלי שילב בין העולמות כדי ליצור גישה שלמה:
-                </p>
-
-                {/* Three Key Areas */}
-                <div className="space-y-4 sm:space-y-6">
-                  {/* הגוף - Body */}
-                  <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-green-500 flex items-center justify-center mt-1">
-                      <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-white"></div>
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-warm-800 mb-2">
-                        הגוף:
-                      </h3>
-                      <p className="text-base sm:text-lg text-warm-700 leading-relaxed">
-                        תואר שני בחינוך גופני ומאמנת אישית בטכנולוגית EMS ואורח חיים בריא.
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* הנפש - Soul/Mind */}
-                  <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-green-500 flex items-center justify-center mt-1">
-                      <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-white"></div>
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-warm-800 mb-2">
-                        הנפש:
-                      </h3>
-                      <p className="text-base sm:text-lg text-warm-700 leading-relaxed">
-                        מאמנת מוסמכת לאכילה רגשית.
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* הרוח - Spirit */}
-                  <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-green-500 flex items-center justify-center mt-1">
-                      <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-white"></div>
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-warm-800 mb-2">
-                        הרוח:
-                      </h3>
-                      <p className="text-base sm:text-lg text-warm-700 leading-relaxed">
-                        מתקשרת רוחנית.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Concluding Statement */}
-                <div className="pt-4 sm:pt-6 border-t-2 border-warm-200">
-                  <p className="text-lg sm:text-xl md:text-2xl text-warm-800 font-medium leading-relaxed">
-                    אני כאן כדי לחלוק איתך דרך חדשה שבה הגוף, הנפש והנשמה עובדים יחד.
+                {/* הגוף - Body */}
+                <div>
+                  <h3 className="text-xl sm:text-2xl font-serif font-normal text-gray-900 mb-2 tracking-tight">
+                    הגוף:
+                  </h3>
+                  <p className="text-base sm:text-lg text-gray-600 leading-relaxed font-light">
+                    תואר שני בחינוך גופני ומאמנת אישית בטכנולוגית EMS ואורח חיים בריא.
                   </p>
                 </div>
+
+                {/* הנפש - Soul/Mind */}
+                <div>
+                  <h3 className="text-xl sm:text-2xl font-serif font-normal text-gray-900 mb-2 tracking-tight">
+                    הנפש:
+                  </h3>
+                  <p className="text-base sm:text-lg text-gray-600 leading-relaxed font-light">
+                    מאמנת מוסמכת לאכילה רגשית.
+                  </p>
+                </div>
+
+                {/* הרוח - Spirit */}
+                <div>
+                  <h3 className="text-xl sm:text-2xl font-serif font-normal text-gray-900 mb-2 tracking-tight">
+                    הרוח:
+                  </h3>
+                  <p className="text-base sm:text-lg text-gray-600 leading-relaxed font-light">
+                    מתקשרת רוחנית.
+                  </p>
+                </div>
+              </div>
+
+              {/* Concluding Statement */}
+              <div className="pt-6 border-t border-gray-200">
+                <p className="text-lg sm:text-xl text-gray-800 leading-relaxed font-light">
+                  אני כאן כדי לחלוק איתך דרך חדשה שבה הגוף, הנפש והנשמה עובדים יחד.
+                </p>
               </div>
             </div>
           </div>

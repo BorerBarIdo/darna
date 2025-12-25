@@ -1,13 +1,13 @@
 export default function Footer() {
   return (
-    <footer className="bg-warm-900 text-warm-100 py-8 sm:py-12">
+    <footer className="bg-white border-t border-gray-100 py-12 sm:py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
-          <h3 className="text-2xl sm:text-3xl font-serif font-semibold mb-4 tracking-tight">נשמה וגוף</h3>
-          <p className="text-warm-300 text-sm sm:text-base mb-6 font-light">
+        <div className="text-center space-y-4">
+          <h3 className="text-2xl sm:text-3xl font-serif font-normal text-gray-900 tracking-tight">נשמה וגוף</h3>
+          <p className="text-gray-600 text-sm sm:text-base font-light">
             משחררים חוקי אכילה, דפוסי חשיבה ישנים ובוחרים בחופש
           </p>
-          <div className="text-warm-400 text-xs sm:text-sm">
+          <div className="text-gray-400 text-xs sm:text-sm font-light">
             © {new Date().getFullYear()} נשמה וגוף. כל הזכויות שמורות.
           </div>
         </div>

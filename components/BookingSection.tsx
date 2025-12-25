@@ -63,23 +63,23 @@ export default function BookingSection() {
   const currentPackage = packages.find(pkg => pkg.id === activePackage) || packages[2]
 
   return (
-    <section className="py-16 sm:py-20 md:py-24 lg:py-28 bg-white">
+    <section className="py-20 sm:py-24 md:py-32 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-semibold text-warm-900 mb-12 sm:mb-16 text-center tracking-tight">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif font-normal text-gray-900 mb-16 sm:mb-20 text-center tracking-tight">
             הזמן מפגש
           </h2>
 
           {/* Package Tabs */}
-          <div className="flex flex-wrap justify-center gap-6 sm:gap-8 mb-12 sm:mb-16">
+          <div className="flex flex-wrap justify-center gap-8 sm:gap-10 mb-16 sm:mb-20">
             {packages.map((pkg) => (
               <button
                 key={pkg.id}
                 onClick={() => setActivePackage(pkg.id)}
-                className={`px-6 py-2 font-medium text-base sm:text-lg transition-all duration-300 border-b-2 ${
+                className={`px-6 py-2 font-light text-base sm:text-lg transition-all duration-300 border-b ${
                   activePackage === pkg.id
-                    ? 'border-warm-900 text-warm-900'
-                    : 'border-transparent text-warm-600 hover:text-warm-800'
+                    ? 'border-gray-900 text-gray-900'
+                    : 'border-transparent text-gray-500 hover:text-gray-700'
                 }`}
               >
                 {pkg.name}
@@ -91,7 +91,7 @@ export default function BookingSection() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16 items-center">
             {/* Image */}
             <div className="order-2 lg:order-1">
-              <div className="relative w-full h-80 sm:h-96 md:h-[500px] overflow-hidden">
+              <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] overflow-hidden">
                 <Image
                   src={currentPackage.image || '/images/WhatsApp Image 2025-12-25 at 19.15.34.jpeg'}
                   alt={currentPackage.name}
@@ -102,30 +102,32 @@ export default function BookingSection() {
             </div>
 
             {/* Content */}
-            <div className="order-1 lg:order-2">
-              <h3 className="text-3xl sm:text-4xl md:text-5xl font-serif font-semibold text-warm-900 mb-4 tracking-tight">
-                {currentPackage.name}
-              </h3>
-              <p className="text-base sm:text-lg text-warm-600 mb-8 leading-relaxed">
-                {currentPackage.description}
-              </p>
+            <div className="order-1 lg:order-2 space-y-8">
+              <div>
+                <h3 className="text-3xl sm:text-4xl md:text-5xl font-serif font-normal text-gray-900 mb-4 tracking-tight">
+                  {currentPackage.name}
+                </h3>
+                <p className="text-lg sm:text-xl text-gray-600 leading-relaxed font-light">
+                  {currentPackage.description}
+                </p>
+              </div>
               
-              <ul className="space-y-4 mb-10">
+              <ul className="space-y-4">
                 {currentPackage.features.map((feature, index) => (
                   <li key={index} className="flex items-start gap-3">
-                    <span className="text-warm-900 text-lg mt-0.5">✓</span>
-                    <span className="text-base sm:text-lg text-warm-700 leading-relaxed">{feature}</span>
+                    <span className="text-gray-900 text-lg mt-0.5 font-light">•</span>
+                    <span className="text-base sm:text-lg text-gray-700 leading-relaxed font-light">{feature}</span>
                   </li>
                 ))}
               </ul>
 
-              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 pt-6 border-t border-warm-200">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 pt-8 border-t border-gray-200">
                 <div>
-                  <p className="text-3xl sm:text-4xl md:text-5xl font-serif font-semibold text-warm-900">
+                  <p className="text-3xl sm:text-4xl md:text-5xl font-serif font-normal text-gray-900">
                     {currentPackage.price}
                   </p>
                 </div>
-                <button className="bg-warm-900 hover:bg-warm-800 text-white px-8 py-4 sm:px-10 sm:py-5 rounded-full font-medium text-base sm:text-lg transition-all duration-300 w-full sm:w-auto">
+                <button className="bg-gray-900 hover:bg-gray-800 text-white px-10 py-4 sm:px-12 sm:py-5 rounded-full text-base sm:text-lg transition-all duration-300 w-full sm:w-auto font-light">
                   הזמן עכשיו
                 </button>
               </div>

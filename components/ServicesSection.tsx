@@ -36,27 +36,27 @@ export default function ServicesSection() {
   ]
 
   return (
-    <section className="py-16 sm:py-20 md:py-24 lg:py-28 bg-white">
+    <section className="py-20 sm:py-24 md:py-32 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           {/* Header */}
-          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-12 sm:mb-16 md:mb-20 gap-4">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-semibold text-warm-900 tracking-tight">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-16 sm:mb-20 gap-6">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif font-normal text-gray-900 tracking-tight">
               השירותים שלנו
             </h2>
-            <button className="border border-warm-800 text-warm-800 px-6 py-2.5 sm:px-8 sm:py-3 rounded-full font-medium text-sm sm:text-base hover:bg-warm-50 transition-colors">
+            <button className="border border-gray-800 text-gray-800 px-8 py-3 rounded-full text-sm sm:text-base hover:bg-gray-50 transition-colors font-light">
               כל השירותים
             </button>
           </div>
 
           {/* Services Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10 md:gap-12">
             {services.map((service) => (
               <div
                 key={service.id}
                 className="group cursor-pointer"
               >
-                <div className="relative aspect-square rounded-full overflow-hidden mb-4 sm:mb-5 shadow-md hover:shadow-xl transition-all duration-500">
+                <div className="relative aspect-square rounded-full overflow-hidden mb-6">
                   {service.image ? (
                     <Image
                       src={service.image}
@@ -67,7 +67,7 @@ export default function ServicesSection() {
                   ) : null}
                 </div>
                 <div className="text-center">
-                  <h3 className="text-sm sm:text-base md:text-lg font-medium text-warm-900 mb-1">
+                  <h3 className="text-base sm:text-lg font-light text-gray-900">
                     {service.title}
                   </h3>
                 </div>

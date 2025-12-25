@@ -28,30 +28,29 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/95 backdrop-blur-md shadow-md'
+          ? 'bg-white/95 backdrop-blur-sm border-b border-gray-100'
           : 'bg-transparent'
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 sm:h-20">
+        <div className="flex items-center justify-between h-20 sm:h-24">
           {/* Logo */}
           <Link
             href="/"
-            className="text-2xl sm:text-3xl font-serif font-semibold text-warm-900 tracking-tight hover:text-warm-700 transition-colors"
+            className="text-2xl sm:text-3xl font-serif font-normal text-gray-900 tracking-tight hover:text-gray-700 transition-colors"
           >
             נשמה וגוף
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center gap-6 lg:gap-8">
+          <div className="hidden md:flex items-center gap-8 lg:gap-10">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm sm:text-base text-warm-800 hover:text-warm-900 font-light transition-colors relative group"
+                className="text-sm sm:text-base text-gray-700 hover:text-gray-900 font-light transition-colors"
               >
                 {link.label}
-                <span className="absolute bottom-0 right-0 w-0 h-0.5 bg-warm-500 transition-all duration-300 group-hover:w-full"></span>
               </Link>
             ))}
           </div>
@@ -59,7 +58,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden text-warm-900 focus:outline-none"
+            className="md:hidden text-gray-900 focus:outline-none"
             aria-label="תפריט"
           >
             <svg
@@ -67,7 +66,7 @@ export default function Navbar() {
               fill="none"
               strokeLinecap="round"
               strokeLinejoin="round"
-              strokeWidth="2"
+              strokeWidth="1.5"
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
@@ -82,14 +81,14 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden pb-4 border-t border-warm-200/50 mt-2">
-            <div className="flex flex-col gap-4 pt-4">
+          <div className="md:hidden pb-6 border-t border-gray-100 mt-2">
+            <div className="flex flex-col gap-4 pt-6">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-base text-warm-800 hover:text-warm-900 font-light transition-colors py-2"
+                  className="text-base text-gray-700 hover:text-gray-900 font-light transition-colors py-2"
                 >
                   {link.label}
                 </Link>
