@@ -15,22 +15,26 @@ export const BASE_PATH = '/darna'
  * In development, returns '' (no basePath)
  */
 export function getBasePath(): string {
-  // Always use /darna for production builds (GitHub Pages)
-  // This ensures consistent paths during SSR and client-side hydration
-  if (typeof window === 'undefined') {
-    // Server-side: check if we're in production build
-    return process.env.NODE_ENV === 'production' ? BASE_PATH : ''
+  // Client-side: detect from URL
+  if (typeof window !== 'undefined') {
+    const hostname = window.location.hostname
+    const pathname = window.location.pathname
+    
+    // If we're on GitHub Pages (github.io domain), always use /darna
+    if (hostname.includes('github.io')) {
+      return BASE_PATH
+    }
+    
+    // Also check pathname as fallback
+    if (pathname.startsWith('/darna')) {
+      return BASE_PATH
+    }
+    
+    // Local development: no basePath
+    return ''
   }
   
-  // Client-side: detect from URL, but default to BASE_PATH if on GitHub Pages
-  const hostname = window.location.hostname
-  
-  // If we're on GitHub Pages, always use /darna
-  if (hostname.includes('github.io')) {
-    return BASE_PATH
-  }
-  
-  // Local development: no basePath
-  return ''
+  // Server-side: check if we're in production build
+  return process.env.NODE_ENV === 'production' ? BASE_PATH : ''
 }
 
