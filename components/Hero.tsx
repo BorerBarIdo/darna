@@ -15,7 +15,7 @@ export default function Hero() {
           className="object-cover"
           style={{ opacity: 0.5 }}
         />
-        <div className="absolute inset-0 bg-white/50"></div>
+        <div className="absolute inset-0 bg-white/70"></div>
       </div>
 
       {/* Content */}
@@ -24,11 +24,12 @@ export default function Hero() {
           {/* Logo - Darna in English */}
           <div className="mb-12 sm:mb-16">
             <div className="inline-block">
-              <h1 className="text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] font-normal text-gray-900 leading-none relative z-20" style={{ 
+              <h1 className="text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] font-normal leading-none relative z-20" style={{ 
                 fontFamily: "'Great Vibes', cursive",
                 fontWeight: 400,
                 lineHeight: '0.9',
-                textShadow: '0 2px 4px rgba(255,255,255,0.8)'
+                color: '#1f2937',
+                textShadow: '2px 2px 8px rgba(255,255,255,1), 0 0 20px rgba(255,255,255,0.8)'
               }}>
                 Darna
               </h1>
@@ -38,21 +39,23 @@ export default function Hero() {
 
           {/* Main Title */}
           <div className="space-y-8 sm:space-y-10 relative z-20">
-            <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif font-normal text-gray-900 leading-[1.1] tracking-wide relative z-20" style={{
+            <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif font-normal leading-[1.1] tracking-wide relative z-20" style={{
               fontFamily: "'Playfair Display', serif",
               letterSpacing: '0.05em',
               fontWeight: 400,
-              textShadow: '0 2px 4px rgba(255,255,255,0.8)'
+              color: '#1f2937',
+              textShadow: '2px 2px 8px rgba(255,255,255,1), 0 0 20px rgba(255,255,255,0.8)'
             }}>
               נשמה וגוף
             </h2>
             
             <div className="max-w-2xl mx-auto space-y-6 relative z-20">
-              <p className="text-xl sm:text-2xl md:text-3xl text-gray-800 leading-relaxed font-light relative z-20" style={{
+              <p className="text-xl sm:text-2xl md:text-3xl leading-relaxed font-light relative z-20" style={{
                 fontFamily: "'Cormorant Garamond', serif",
                 fontStyle: 'italic',
                 fontWeight: 300,
-                textShadow: '0 1px 2px rgba(255,255,255,0.8)'
+                color: '#374151',
+                textShadow: '1px 1px 4px rgba(255,255,255,1), 0 0 10px rgba(255,255,255,0.8)'
               }}>
                 משחררים חוקי אכילה, דפוסי חשיבה ישנים ובוחרים בחופש
               </p>
