@@ -19,46 +19,48 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-24 md:py-32 text-center relative z-10">
-        <div className="max-w-4xl mx-auto space-y-10 sm:space-y-12 md:space-y-16">
-          {/* Logo */}
-          <div className="mb-8 sm:mb-12">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32 md:py-40 text-center relative z-10">
+        <div className="max-w-4xl mx-auto space-y-12 sm:space-y-16 md:space-y-20">
+          {/* Logo - Darna */}
+          <div className="mb-12 sm:mb-16">
             <div className="inline-block">
-              <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-serif font-normal text-gray-900 leading-none tracking-wider" style={{ 
+              <h1 className="text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] font-serif font-normal text-gray-900 leading-none" style={{ 
                 fontFamily: "'Playfair Display', serif",
-                letterSpacing: '0.05em',
-                fontWeight: 400
+                letterSpacing: '0.08em',
+                fontWeight: 400,
+                lineHeight: '0.9'
               }}>
                 דרנה
               </h1>
-              <div className="w-24 h-0.5 bg-gray-400 mx-auto mt-4"></div>
+              <div className="w-32 h-px bg-gray-500 mx-auto mt-6"></div>
             </div>
           </div>
 
           {/* Main Title */}
-          <div className="space-y-6 sm:space-y-8">
-            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-normal text-gray-900 leading-tight tracking-wide" style={{
+          <div className="space-y-8 sm:space-y-10">
+            <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif font-normal text-gray-900 leading-[1.1] tracking-wide" style={{
               fontFamily: "'Playfair Display', serif",
-              letterSpacing: '0.03em',
+              letterSpacing: '0.05em',
               fontWeight: 400
             }}>
               נשמה וגוף
             </h2>
             
-            <div className="max-w-2xl mx-auto space-y-4">
-              <p className="text-lg sm:text-xl md:text-2xl text-gray-700 leading-relaxed font-light italic" style={{
+            <div className="max-w-2xl mx-auto space-y-6">
+              <p className="text-xl sm:text-2xl md:text-3xl text-gray-800 leading-relaxed font-light" style={{
                 fontFamily: "'Cormorant Garamond', serif",
-                fontStyle: 'italic'
+                fontStyle: 'italic',
+                fontWeight: 300
               }}>
                 משחררים חוקי אכילה, דפוסי חשיבה ישנים ובוחרים בחופש
               </p>
               
-              <div className="pt-6">
-                <p className="text-base sm:text-lg text-gray-600 font-light tracking-wide" style={{
+              <div className="pt-8">
+                <p className="text-sm sm:text-base text-gray-600 font-light tracking-[0.15em]" style={{
                   fontFamily: "'Cormorant Garamond', serif",
-                  letterSpacing: '0.1em',
                   textTransform: 'uppercase',
-                  fontSize: '0.9rem'
+                  letterSpacing: '0.15em',
+                  fontSize: '0.85rem'
                 }}>
                   מסע של ריפוי דרך תנועה
                 </p>
