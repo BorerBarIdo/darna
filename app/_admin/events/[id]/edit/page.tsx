@@ -2,6 +2,11 @@ import { getEvents } from '@/lib/data'
 import { notFound } from 'next/navigation'
 import EventForm from '@/components/EventForm'
 
+export async function generateStaticParams() {
+  // For static export, return empty array since admin pages won't work statically
+  return []
+}
+
 export default async function EditEventPage({
   params,
 }: {

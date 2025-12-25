@@ -30,7 +30,7 @@ export default function GuideSection() {
 
               <div className="space-y-6 sm:space-y-8">
                 <p className="text-base sm:text-lg md:text-xl text-warm-700 leading-relaxed">
-                  שמי טלי שורץ, ובמשך 26 שנות ניסיון אספתי ידע, כלים ואג'נדות שעובדות. המסע שלי שילב בין העולמות כדי ליצור גישה שלמה:
+                  שמי טלי שורץ, ובמשך 26 שנות ניסיון אספתי ידע, כלים ואג&apos;נדות שעובדות. המסע שלי שילב בין העולמות כדי ליצור גישה שלמה:
                 </p>
 
                 {/* Three Key Areas */}

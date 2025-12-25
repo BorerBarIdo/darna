@@ -6,6 +6,10 @@ const nextConfig = {
   },
   basePath: '/darna',
   trailingSlash: true,
+  // Exclude admin and API routes from static export
+  async rewrites() {
+    return []
+  },
 }
 
 module.exports = nextConfig
