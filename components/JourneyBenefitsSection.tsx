@@ -47,17 +47,18 @@ export default function JourneyBenefitsSection() {
           </div>
 
           <div className="max-w-4xl mx-auto">
-          <div className="space-y-4 sm:space-y-6">
-            {benefits.map((benefit, index) => (
-              <div
-                key={index}
-                className="border-r-2 border-gray-200 pr-6"
-              >
-                <p className="text-base sm:text-lg text-gray-700 leading-relaxed font-light">
-                  {benefit.title}
-                </p>
-              </div>
-            ))}
+            <div className="space-y-4 sm:space-y-6">
+              {benefits.map((benefit, index) => (
+                <div
+                  key={index}
+                  className="border-r-2 border-gray-200 pr-6"
+                >
+                  <p className="text-base sm:text-lg text-gray-700 leading-relaxed font-light">
+                    {benefit.title}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

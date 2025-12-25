@@ -29,7 +29,6 @@ export default function RevolutionSection() {
           </div>
 
           <div className="max-w-3xl mx-auto">
-
           {/* Subtitle */}
           <p className="text-xl sm:text-2xl text-gray-700 mb-16 sm:mb-20 text-center leading-relaxed font-light">
             &apos;נשמה וגוף&apos; היא מהפכה תודעתית לירידה במשקל וחיים מתוך:
