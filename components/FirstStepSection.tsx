@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import OptimizedImage from './OptimizedImage'
 
 export default function FirstStepSection() {
   const sectionImage = '/images/WhatsApp Image 2025-12-25 at 19.15.19.jpeg'
@@ -7,13 +7,11 @@ export default function FirstStepSection() {
     <section className="py-20 sm:py-24 md:py-32 bg-white">
       {/* Full Width Image */}
       <div className="relative w-full h-[500px] sm:h-[600px] md:h-[700px] mb-16 sm:mb-20">
-        <Image
+        <OptimizedImage
           src={sectionImage}
           alt="הצעד הראשון"
           fill
-          className="object-cover"
-          loading="lazy"
-          quality={85}
+          sizes="100vw"
         />
       </div>
 

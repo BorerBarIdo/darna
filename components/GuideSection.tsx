@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import OptimizedImage from './OptimizedImage'
 
 export default function GuideSection() {
   // משתמש באחת התמונות שהעלית
@@ -12,12 +12,12 @@ export default function GuideSection() {
             {/* Image Side */}
             <div className="order-2 lg:order-1">
               <div className="relative w-full h-[500px] sm:h-[600px] md:h-[700px] overflow-hidden rounded-lg shadow-lg">
-                <Image
+                <OptimizedImage
                   src={guideImage}
                   alt="טלי שורץ - המדריכה שלך למסע"
                   fill
-                  className="object-cover"
                   priority
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
             </div>

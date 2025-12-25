@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import Image from 'next/image'
+import OptimizedImage from './OptimizedImage'
 
 interface Package {
   id: string
@@ -92,10 +92,11 @@ export default function BookingSection() {
             {/* Image */}
             <div className="order-2 lg:order-1">
               <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] overflow-hidden">
-                <Image
+                <OptimizedImage
                   src={currentPackage.image || '/images/WhatsApp Image 2025-12-25 at 19.15.34.jpeg'}
                   alt={currentPackage.name}
                   fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
                 />
               </div>

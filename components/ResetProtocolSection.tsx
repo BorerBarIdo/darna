@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import OptimizedImage from './OptimizedImage'
 
 export default function ResetProtocolSection() {
   const eatImage = '/images/WhatsApp Image 2025-12-25 at 19.14.32.jpeg'
@@ -17,37 +17,31 @@ export default function ResetProtocolSection() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-0 mb-12 sm:mb-16">
             {/* What to eat */}
             <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px]">
-              <Image
+              <OptimizedImage
                 src={eatImage}
                 alt="מה אוכלים"
                 fill
-                className="object-cover"
-                loading="lazy"
-                quality={85}
+                sizes="(max-width: 768px) 100vw, 33vw"
               />
             </div>
 
             {/* What to avoid */}
             <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px]">
-              <Image
+              <OptimizedImage
                 src={avoidImage}
                 alt="מה מוציאים"
                 fill
-                className="object-cover"
-                loading="lazy"
-                quality={85}
+                sizes="(max-width: 768px) 100vw, 33vw"
               />
             </div>
 
             {/* What to drink */}
             <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px]">
-              <Image
+              <OptimizedImage
                 src={drinkImage}
                 alt="מה שותים"
                 fill
-                className="object-cover"
-                loading="lazy"
-                quality={85}
+                sizes="(max-width: 768px) 100vw, 33vw"
               />
             </div>
           </div>

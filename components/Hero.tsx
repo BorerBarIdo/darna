@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import OptimizedImage from './OptimizedImage'
 
 export default function Hero() {
   const backgroundImage = '/images/WhatsApp Image 2025-12-25 at 19.14.32.jpeg'
@@ -7,12 +7,11 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 sm:pt-20">
       {/* Background Image - Full Width */}
       <div className="absolute inset-0 z-0">
-        <Image
+        <OptimizedImage
           src={backgroundImage}
           alt="רקע"
           fill
           priority
-          className="object-cover"
           style={{ opacity: 0.8 }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-white/50 to-white/60"></div>

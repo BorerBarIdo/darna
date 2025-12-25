@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import OptimizedImage from './OptimizedImage'
 
 export default function StrugglesSection() {
   const sectionImage = '/images/WhatsApp Image 2025-12-25 at 19.14.53.jpeg'
@@ -12,13 +12,11 @@ export default function StrugglesSection() {
             {/* Image */}
             <div className="order-2 lg:order-1">
               <div className="relative w-full h-[500px] sm:h-[600px] overflow-hidden rounded-lg shadow-lg">
-                <Image
+                <OptimizedImage
                   src={sectionImage}
                   alt="נמאס לך מהמעגל הזה"
                   fill
-                  className="object-cover"
-                  loading="lazy"
-                  quality={85}
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
             </div>

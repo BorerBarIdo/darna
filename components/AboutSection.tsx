@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import OptimizedImage from './OptimizedImage'
 
 export default function AboutSection() {
   const aboutImage = '/images/WhatsApp Image 2025-12-25 at 19.14.32.jpeg'
@@ -12,12 +12,12 @@ export default function AboutSection() {
             {/* Image */}
             <div className="order-2 lg:order-1">
               <div className="relative w-full h-[500px] sm:h-[600px] overflow-hidden rounded-lg shadow-lg">
-                <Image
+                <OptimizedImage
                   src={aboutImage}
                   alt="נשמה וגוף"
                   fill
-                  className="object-cover"
                   priority
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
             </div>

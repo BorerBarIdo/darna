@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import OptimizedImage from './OptimizedImage'
 
 interface Service {
   id: string
@@ -58,10 +58,11 @@ export default function ServicesSection() {
               >
                 <div className="relative aspect-square rounded-full overflow-hidden mb-6">
                   {service.image ? (
-                    <Image
+                    <OptimizedImage
                       src={service.image}
                       alt={service.title}
                       fill
+                      sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 20vw"
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   ) : null}

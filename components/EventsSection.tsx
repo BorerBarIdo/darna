@@ -1,5 +1,5 @@
 import { Event } from '@/lib/data'
-import Image from 'next/image'
+import OptimizedImage from './OptimizedImage'
 import { format } from 'date-fns'
 
 interface EventsSectionProps {
@@ -36,10 +36,11 @@ export default function EventsSection({ events }: EventsSectionProps) {
             >
               {event.image && (
                 <div className="relative h-48 sm:h-56 md:h-64 w-full">
-                  <Image
+                  <OptimizedImage
                     src={event.image}
                     alt={event.title}
                     fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover"
                   />
                 </div>

@@ -1,6 +1,6 @@
 'use client'
 
-import Image from 'next/image'
+import OptimizedImage from './OptimizedImage'
 
 interface ImageCardProps {
   image: {
@@ -18,10 +18,11 @@ export default function ImageCard({ image }: ImageCardProps) {
   return (
     <>
       <div className="relative aspect-square">
-        <Image
+        <OptimizedImage
           src={image.url}
           alt={image.name}
           fill
+          sizes="(max-width: 640px) 50vw, 33vw"
           className="object-cover"
         />
       </div>

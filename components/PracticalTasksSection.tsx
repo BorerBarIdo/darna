@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import OptimizedImage from './OptimizedImage'
 
 export default function PracticalTasksSection() {
   const physicalImage = '/images/WhatsApp Image 2025-12-25 at 19.14.32.jpeg'
@@ -15,23 +15,19 @@ export default function PracticalTasksSection() {
           {/* Full Width Images Side by Side */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0 mb-12 sm:mb-16">
             <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px]">
-              <Image
+              <OptimizedImage
                 src={physicalImage}
                 alt="משימה פיזית"
                 fill
-                className="object-cover"
-                loading="lazy"
-                quality={85}
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
             <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px]">
-              <Image
+              <OptimizedImage
                 src={emotionalImage}
                 alt="משימה רגשית"
                 fill
-                className="object-cover"
-                loading="lazy"
-                quality={85}
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
           </div>

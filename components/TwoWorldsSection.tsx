@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import OptimizedImage from './OptimizedImage'
 
 export default function TwoWorldsSection() {
   const bodyImage = '/images/WhatsApp Image 2025-12-25 at 19.14.53.jpeg'
@@ -15,23 +15,19 @@ export default function TwoWorldsSection() {
           {/* Full Width Images Side by Side */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 mb-12 sm:mb-16">
             <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px]">
-              <Image
+              <OptimizedImage
                 src={bodyImage}
                 alt="הזנת הגוף"
                 fill
-                className="object-cover"
-                loading="lazy"
-                quality={85}
+                sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
             <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px]">
-              <Image
+              <OptimizedImage
                 src={soulImage}
                 alt="הזנת הנשמה"
                 fill
-                className="object-cover"
-                loading="lazy"
-                quality={85}
+                sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
           </div>
