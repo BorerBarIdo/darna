@@ -13,9 +13,9 @@ export default function Hero() {
           fill
           priority
           className="object-cover"
-          style={{ opacity: 0.5 }}
+          style={{ opacity: 0.8 }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-white/85 to-white/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-white/50 to-white/60"></div>
       </div>
 
       {/* Content */}
