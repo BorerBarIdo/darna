@@ -4,21 +4,9 @@ export default function Hero() {
   const backgroundImage = '/images/WhatsApp Image 2025-12-25 at 19.15.19.jpeg'
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 sm:pt-20">
-      {/* Background Image - Full Width */}
-      <div className="absolute inset-0 z-0">
-        <OptimizedImage
-          src={backgroundImage}
-          alt="רקע"
-          fill
-          priority
-          style={{ opacity: 0.95, objectPosition: 'center bottom' }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-white/30 to-white/40"></div>
-      </div>
-
-      {/* Content */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32 md:py-40 text-center relative z-10">
+    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-16 sm:pt-20">
+      {/* Content - Above Image */}
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32 md:py-40 text-center relative z-10 flex-1 flex items-center justify-center">
         <div className="max-w-4xl mx-auto space-y-12 sm:space-y-16 md:space-y-20">
           {/* Logo - Darna in English */}
           <div className="mb-12 sm:mb-16">
@@ -77,6 +65,18 @@ export default function Hero() {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Background Image - Below Content */}
+      <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] mt-auto">
+        <OptimizedImage
+          src={backgroundImage}
+          alt="רקע"
+          fill
+          priority
+          style={{ opacity: 0.95, objectPosition: 'center bottom' }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-white/30 to-white/40"></div>
       </div>
     </section>
   )
