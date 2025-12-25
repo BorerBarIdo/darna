@@ -57,7 +57,6 @@ export default function AboutSection() {
               <p className="text-gray-600 text-base leading-relaxed font-light">בחירה בחופש להיות מי שאנחנו</p>
             </div>
           </div>
-          </div>
         </div>
       </div>
     </section>
