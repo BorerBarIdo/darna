@@ -1,4 +1,8 @@
+import Image from 'next/image'
+
 export default function JourneyBenefitsSection() {
+  const sectionImage = '/images/WhatsApp Image 2025-12-25 at 19.15.34.jpeg'
+  
   const benefits = [
     {
       title: '12 מודולים (שבועות) מחזוריים המכסים את כל היבטי החיים: מודל השפע והאיזון, בילויים, אירועים ועוד.',
@@ -18,27 +22,41 @@ export default function JourneyBenefitsSection() {
   ]
 
   return (
-    <section className="py-16 sm:py-20 md:py-24 lg:py-28 bg-warm-50/30">
+    <section className="py-20 sm:py-24 md:py-32 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-semibold text-warm-900 mb-12 sm:mb-16 text-center tracking-tight">
-            מה עוד תקבלי/י במסע &apos;נשמה וגוף&apos;?
-          </h2>
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16 items-center mb-16 sm:mb-20">
+            {/* Title */}
+            <div>
+              <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif font-normal text-gray-900 tracking-tight">
+                מה עוד תקבלי/י במסע &apos;נשמה וגוף&apos;?
+              </h2>
+            </div>
+
+            {/* Image */}
+            <div>
+              <div className="relative w-full h-[400px] sm:h-[500px] overflow-hidden">
+                <Image
+                  src={sectionImage}
+                  alt="מה עוד תקבלי במסע"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
 
           <div className="space-y-4 sm:space-y-6">
             {benefits.map((benefit, index) => (
               <div
                 key={index}
-                className="bg-white rounded-lg p-6 sm:p-8 border border-warm-200/50 hover:border-warm-300 transition-all duration-300"
+                className="border-r-2 border-gray-200 pr-6"
               >
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 border border-warm-400 rounded-full flex items-center justify-center mt-1">
-                    <div className="w-4 h-4 border border-warm-500 rounded-full"></div>
-                  </div>
-                  <p className="text-base sm:text-lg text-warm-800 leading-relaxed font-light flex-1">
-                    {benefit.title}
-                  </p>
-                </div>
+                <p className="text-base sm:text-lg text-gray-700 leading-relaxed font-light">
+                  {benefit.title}
+                </p>
               </div>
             ))}
           </div>
