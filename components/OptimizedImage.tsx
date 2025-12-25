@@ -1,6 +1,7 @@
 'use client'
 
 import { getBasePath } from '@/lib/basePath'
+import { useEffect, useState } from 'react'
 
 interface OptimizedImageProps {
   src: string
@@ -29,8 +30,22 @@ export default function OptimizedImage({
   sizes,
   style,
 }: OptimizedImageProps) {
-  // Get basePath - this will detect from URL on client-side
-  const basePath = getBasePath()
+  // Use state to ensure basePath is set before render
+  const [basePath, setBasePath] = useState(() => {
+    // Initialize with detected basePath immediately
+    if (typeof window !== 'undefined') {
+      return getBasePath()
+    }
+    return ''
+  })
+
+  // Update basePath on mount to ensure it's correct
+  useEffect(() => {
+    const detected = getBasePath()
+    if (detected !== basePath) {
+      setBasePath(detected)
+    }
+  }, [basePath])
   
   // Normalize image path for GitHub Pages basePath
   // Handle both absolute paths (/images/...) and ensure basePath is prepended correctly
