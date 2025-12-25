@@ -1,44 +1,56 @@
-export default function FirstStepSection() {
-  return (
-    <section className="py-16 sm:py-20 md:py-24 lg:py-28 bg-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-semibold text-warm-900 mb-12 sm:mb-16 tracking-tight">
-            הצעד הראשון שלך: איך מתחילים?
-          </h2>
+import Image from 'next/image'
 
-          {/* Decorative element */}
-          <div className="flex justify-center mb-8 sm:mb-12">
-            <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full border border-warm-300 flex items-center justify-center">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 border border-warm-400 rounded-full flex items-center justify-center">
-                <div className="w-8 h-8 border-r border-b border-warm-500 transform rotate-45"></div>
+export default function FirstStepSection() {
+  const sectionImage = '/images/WhatsApp Image 2025-12-25 at 19.15.19.jpeg'
+
+  return (
+    <section className="py-20 sm:py-24 md:py-32 bg-white">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16 items-center">
+            {/* Image */}
+            <div className="order-2 lg:order-1">
+              <div className="relative w-full h-[400px] sm:h-[500px] overflow-hidden">
+                <Image
+                  src={sectionImage}
+                  alt="הצעד הראשון"
+                  fill
+                  className="object-cover"
+                />
               </div>
             </div>
-          </div>
 
-          <div className="space-y-6 sm:space-y-8 text-base sm:text-lg md:text-xl text-warm-800 leading-relaxed">
-            <p className="font-light">
-              המסע שלנו מתחיל במודול הראשון והבסיסי ביותר:
-            </p>
+            {/* Content */}
+            <div className="order-1 lg:order-2 text-center lg:text-right space-y-8">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif font-normal text-gray-900 tracking-tight">
+                הצעד הראשון שלך: איך מתחילים?
+              </h2>
 
-            <div className="bg-warm-50/50 rounded-lg p-8 sm:p-10 border border-warm-200/50 text-right space-y-4">
-              <h3 className="text-xl sm:text-2xl md:text-3xl font-serif font-semibold text-warm-900 mb-4">
-                מודול 1: RESET (ניקוי ופתיחת מרחב)
-              </h3>
-              
-              <div className="space-y-4 text-warm-700">
-                <div>
-                  <p className="font-medium text-warm-900 mb-2">המסר המוביל:</p>
-                  <p className="font-light italic">
-                    &apos;כדי לבנות אמת חדשה, עלינו לפנות את הישנה – במקרר, בלב ובמחשבה.&apos;
-                  </p>
-                </div>
-                
-                <div>
-                  <p className="font-medium text-warm-900 mb-2">ההבטחה:</p>
-                  <p className="font-light italic">
-                    &apos;השבוע אנחנו מורידים את הרעש כדי להתחיל לשמוע את קול הנשמה והשובע האמיתי.&apos;
-                  </p>
+              <div className="space-y-6 text-lg sm:text-xl text-gray-700 leading-relaxed font-light">
+                <p>
+                  המסע שלנו מתחיל במודול הראשון והבסיסי ביותר:
+                </p>
+
+                <div className="space-y-6 pt-4">
+                  <h3 className="text-2xl sm:text-3xl font-serif font-normal text-gray-900">
+                    מודול 1: RESET (ניקוי ופתיחת מרחב)
+                  </h3>
+                  
+                  <div className="space-y-6 text-gray-600">
+                    <div>
+                      <p className="font-light mb-2">המסר המוביל:</p>
+                      <p className="font-light italic">
+                        &apos;כדי לבנות אמת חדשה, עלינו לפנות את הישנה – במקרר, בלב ובמחשבה.&apos;
+                      </p>
+                    </div>
+                    
+                    <div>
+                      <p className="font-light mb-2">ההבטחה:</p>
+                      <p className="font-light italic">
+                        &apos;השבוע אנחנו מורידים את הרעש כדי להתחיל לשמוע את קול הנשמה והשובע האמיתי.&apos;
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

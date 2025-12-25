@@ -1,19 +1,25 @@
+import Image from 'next/image'
+
 export default function Hero() {
-  // אם יש לך תמונת רקע, שנה את זה ל-true והוסף את התמונה ל-public/images/hero-bg.jpg
-  const hasBackgroundImage = false
-  const backgroundImage = '/images/hero-bg.jpg'
+  const backgroundImage = '/images/WhatsApp Image 2025-12-25 at 19.14.32.jpeg'
 
   return (
-    <section 
-      className="relative min-h-screen flex items-center justify-center bg-white overflow-hidden pt-16 sm:pt-20"
-      style={hasBackgroundImage ? {
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      } : {}}
-    >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-24 md:py-32 text-center">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 sm:pt-20">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src={backgroundImage}
+          alt="רקע"
+          fill
+          priority
+          className="object-cover"
+          style={{ opacity: 0.3 }}
+        />
+        <div className="absolute inset-0 bg-white/60"></div>
+      </div>
+
+      {/* Content */}
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-24 md:py-32 text-center relative z-10">
         <div className="max-w-3xl mx-auto space-y-8 sm:space-y-10 md:space-y-12">
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif font-normal text-gray-900 leading-tight tracking-tight">
             נשמה וגוף
