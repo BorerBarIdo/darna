@@ -5,7 +5,7 @@ export default function Hero() {
 
   return (
     <section 
-      className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-warm-50 via-bright-50 to-warm-100 overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-warm-50 via-bright-50 to-warm-100 overflow-hidden pt-16 sm:pt-20"
       style={hasBackgroundImage ? {
         backgroundImage: `linear-gradient(rgba(255, 247, 237, 0.7), rgba(254, 252, 232, 0.7)), url(${backgroundImage})`,
         backgroundSize: 'cover',

@@ -1,4 +1,5 @@
 import { getEvents } from '@/lib/data'
+import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import StrugglesSection from '@/components/StrugglesSection'
 import RevolutionSection from '@/components/RevolutionSection'
@@ -22,22 +23,31 @@ export default async function Home() {
 
   return (
     <main className="min-h-screen">
+      <Navbar />
       <Hero />
       <StrugglesSection />
       <RevolutionSection />
-      <GuideSection />
-      <FirstStepSection />
-      <TwoWorldsSection />
-      <ResetProtocolSection />
-      <SoulNourishmentSection />
-      <PracticalTasksSection />
-      <JourneyBenefitsSection />
-      <ServicesSection />
-      <AboutServiceSection />
+      <div id="guide">
+        <GuideSection />
+      </div>
+      <div id="journey">
+        <FirstStepSection />
+        <TwoWorldsSection />
+        <ResetProtocolSection />
+        <SoulNourishmentSection />
+        <PracticalTasksSection />
+        <JourneyBenefitsSection />
+      </div>
+      <div id="services">
+        <ServicesSection />
+        <AboutServiceSection />
+      </div>
       <div id="about">
         <AboutSection />
       </div>
-      <BookingSection />
+      <div id="booking">
+        <BookingSection />
+      </div>
       <div id="events">
         <EventsSection events={events} />
       </div>
