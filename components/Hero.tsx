@@ -1,7 +1,7 @@
 import OptimizedImage from './OptimizedImage'
 
 export default function Hero() {
-  const backgroundImage = '/images/WhatsApp Image 2025-12-25 at 19.14.32.jpeg'
+  const backgroundImage = '/images/WhatsApp Image 2025-12-25 at 19.15.19.jpeg'
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 sm:pt-20">
