@@ -41,11 +41,11 @@ export default function Hero() {
           {/* Main Title */}
           <div className="space-y-8 sm:space-y-10 relative z-20">
             <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif font-normal leading-[1.1] tracking-wide relative z-20 text-gray-900" style={{
-              fontFamily: "'Playfair Display', Georgia, serif",
+              fontFamily: "'EB Garamond', 'Cormorant Garamond', Georgia, serif",
               letterSpacing: '0.05em',
-              fontWeight: 400,
+              fontWeight: 500,
               color: '#111827',
-              textShadow: '3px 3px 10px rgba(255,255,255,1), 0 0 25px rgba(255,255,255,0.9)',
+              textShadow: '4px 4px 12px rgba(255,255,255,1), 0 0 30px rgba(255,255,255,1), 2px 2px 8px rgba(0,0,0,0.1)',
               display: 'block',
               visibility: 'visible'
             }}>
@@ -53,23 +53,24 @@ export default function Hero() {
             </h2>
             
             <div className="max-w-2xl mx-auto space-y-6 relative z-20">
-              <p className="text-xl sm:text-2xl md:text-3xl leading-relaxed font-light relative z-20 text-gray-800" style={{
+              <p className="text-xl sm:text-2xl md:text-3xl leading-relaxed font-light relative z-20 text-gray-900" style={{
                 fontFamily: "'Cormorant Garamond', serif",
                 fontStyle: 'italic',
-                fontWeight: 300,
-                color: '#1f2937',
-                textShadow: '2px 2px 6px rgba(255,255,255,1), 0 0 15px rgba(255,255,255,0.9)'
+                fontWeight: 400,
+                color: '#111827',
+                textShadow: '4px 4px 12px rgba(255,255,255,1), 0 0 30px rgba(255,255,255,1), 2px 2px 8px rgba(0,0,0,0.1)'
               }}>
                 משחררים חוקי אכילה, דפוסי חשיבה ישנים ובוחרים בחופש
               </p>
               
               <div className="pt-8 relative z-20">
-                <p className="text-sm sm:text-base text-gray-600 font-light tracking-[0.15em] relative z-20" style={{
+                <p className="text-base sm:text-lg md:text-xl text-gray-900 font-medium tracking-[0.15em] relative z-20" style={{
                   fontFamily: "'Cormorant Garamond', serif",
                   textTransform: 'uppercase',
                   letterSpacing: '0.15em',
-                  fontSize: '0.85rem',
-                  textShadow: '0 1px 2px rgba(255,255,255,0.8)'
+                  fontWeight: 500,
+                  color: '#111827',
+                  textShadow: '3px 3px 10px rgba(255,255,255,1), 0 0 20px rgba(255,255,255,0.9), 1px 1px 4px rgba(0,0,0,0.1)'
                 }}>
                   מסע של ריפוי דרך תנועה
                 </p>
