@@ -29,8 +29,6 @@ export default function AboutSection() {
             </div>
           </div>
 
-          <div className="max-w-3xl mx-auto">
-
           <div className="space-y-6 sm:space-y-8 text-lg sm:text-xl text-gray-700 leading-relaxed text-center font-light">
             <p>
               בואו נצא יחד למסע של ריפוי וצמיחה דרך תנועה, נשימה ומודעות.
@@ -58,6 +56,7 @@ export default function AboutSection() {
               <h3 className="text-2xl sm:text-3xl font-serif font-normal text-gray-900 mb-3 tracking-tight">חופש</h3>
               <p className="text-gray-600 text-base leading-relaxed font-light">בחירה בחופש להיות מי שאנחנו</p>
             </div>
+          </div>
           </div>
         </div>
       </div>
