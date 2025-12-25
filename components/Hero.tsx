@@ -24,42 +24,46 @@ export default function Hero() {
           {/* Logo - Darna in English */}
           <div className="mb-12 sm:mb-16">
             <div className="inline-block">
-              <h1 className="text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] font-normal text-gray-900 leading-none" style={{ 
+              <h1 className="text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] font-normal text-gray-900 leading-none relative z-20" style={{ 
                 fontFamily: "'Great Vibes', cursive",
                 fontWeight: 400,
-                lineHeight: '0.9'
+                lineHeight: '0.9',
+                textShadow: '0 2px 4px rgba(255,255,255,0.8)'
               }}>
                 Darna
               </h1>
-              <div className="w-32 h-px bg-gray-600 mx-auto mt-6"></div>
+              <div className="w-32 h-px bg-gray-600 mx-auto mt-6 relative z-20"></div>
             </div>
           </div>
 
           {/* Main Title */}
-          <div className="space-y-8 sm:space-y-10">
-            <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif font-normal text-gray-900 leading-[1.1] tracking-wide" style={{
+          <div className="space-y-8 sm:space-y-10 relative z-20">
+            <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif font-normal text-gray-900 leading-[1.1] tracking-wide relative z-20" style={{
               fontFamily: "'Playfair Display', serif",
               letterSpacing: '0.05em',
-              fontWeight: 400
+              fontWeight: 400,
+              textShadow: '0 2px 4px rgba(255,255,255,0.8)'
             }}>
               נשמה וגוף
             </h2>
             
-            <div className="max-w-2xl mx-auto space-y-6">
-              <p className="text-xl sm:text-2xl md:text-3xl text-gray-800 leading-relaxed font-light" style={{
+            <div className="max-w-2xl mx-auto space-y-6 relative z-20">
+              <p className="text-xl sm:text-2xl md:text-3xl text-gray-800 leading-relaxed font-light relative z-20" style={{
                 fontFamily: "'Cormorant Garamond', serif",
                 fontStyle: 'italic',
-                fontWeight: 300
+                fontWeight: 300,
+                textShadow: '0 1px 2px rgba(255,255,255,0.8)'
               }}>
                 משחררים חוקי אכילה, דפוסי חשיבה ישנים ובוחרים בחופש
               </p>
               
-              <div className="pt-8">
-                <p className="text-sm sm:text-base text-gray-600 font-light tracking-[0.15em]" style={{
+              <div className="pt-8 relative z-20">
+                <p className="text-sm sm:text-base text-gray-600 font-light tracking-[0.15em] relative z-20" style={{
                   fontFamily: "'Cormorant Garamond', serif",
                   textTransform: 'uppercase',
                   letterSpacing: '0.15em',
-                  fontSize: '0.85rem'
+                  fontSize: '0.85rem',
+                  textShadow: '0 1px 2px rgba(255,255,255,0.8)'
                 }}>
                   מסע של ריפוי דרך תנועה
                 </p>
