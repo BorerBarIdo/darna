@@ -22,6 +22,8 @@ export default function ResetProtocolSection() {
                 alt="מה אוכלים"
                 fill
                 className="object-cover"
+                loading="lazy"
+                quality={85}
               />
             </div>
 
@@ -32,6 +34,8 @@ export default function ResetProtocolSection() {
                 alt="מה מוציאים"
                 fill
                 className="object-cover"
+                loading="lazy"
+                quality={85}
               />
             </div>
 
@@ -42,6 +46,8 @@ export default function ResetProtocolSection() {
                 alt="מה שותים"
                 fill
                 className="object-cover"
+                loading="lazy"
+                quality={85}
               />
             </div>
           </div>

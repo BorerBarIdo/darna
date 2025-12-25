@@ -12,6 +12,8 @@ export default function FirstStepSection() {
           alt="הצעד הראשון"
           fill
           className="object-cover"
+          loading="lazy"
+          quality={85}
         />
       </div>
 

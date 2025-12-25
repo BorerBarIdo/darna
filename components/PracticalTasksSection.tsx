@@ -20,6 +20,8 @@ export default function PracticalTasksSection() {
                 alt="משימה פיזית"
                 fill
                 className="object-cover"
+                loading="lazy"
+                quality={85}
               />
             </div>
             <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px]">
@@ -28,6 +30,8 @@ export default function PracticalTasksSection() {
                 alt="משימה רגשית"
                 fill
                 className="object-cover"
+                loading="lazy"
+                quality={85}
               />
             </div>
           </div>

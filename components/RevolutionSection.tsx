@@ -27,6 +27,8 @@ export default function RevolutionSection() {
                   alt="דיאטה לא עוד"
                   fill
                   className="object-cover"
+                  loading="lazy"
+                  quality={85}
                 />
               </div>
             </div>

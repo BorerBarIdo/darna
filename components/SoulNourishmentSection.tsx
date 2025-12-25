@@ -12,6 +12,8 @@ export default function SoulNourishmentSection() {
           alt="הזנת הנשמה"
           fill
           className="object-cover"
+          loading="lazy"
+          quality={85}
         />
       </div>
 

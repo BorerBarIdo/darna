@@ -17,6 +17,8 @@ export default function StrugglesSection() {
                   alt="נמאס לך מהמעגל הזה"
                   fill
                   className="object-cover"
+                  loading="lazy"
+                  quality={85}
                 />
               </div>
             </div>

@@ -30,6 +30,8 @@ export default function JourneyBenefitsSection() {
           alt="מה עוד תקבלי במסע"
           fill
           className="object-cover"
+          loading="lazy"
+          quality={85}
         />
       </div>
 

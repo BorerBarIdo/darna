@@ -12,6 +12,8 @@ export default function AboutServiceSection() {
           alt="תהליך הריפוי"
           fill
           className="object-cover"
+          loading="lazy"
+          quality={85}
         />
       </div>
 

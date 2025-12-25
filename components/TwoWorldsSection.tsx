@@ -20,6 +20,8 @@ export default function TwoWorldsSection() {
                 alt="הזנת הגוף"
                 fill
                 className="object-cover"
+                loading="lazy"
+                quality={85}
               />
             </div>
             <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px]">
@@ -28,6 +30,8 @@ export default function TwoWorldsSection() {
                 alt="הזנת הנשמה"
                 fill
                 className="object-cover"
+                loading="lazy"
+                quality={85}
               />
             </div>
           </div>
