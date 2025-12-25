@@ -5,29 +5,22 @@ export default function AboutSection() {
 
   return (
     <section className="py-20 sm:py-24 md:py-32 bg-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16 items-center mb-12 sm:mb-16">
-            {/* Image */}
-            <div className="order-2 lg:order-1">
-              <div className="relative w-full h-[400px] sm:h-[500px] overflow-hidden">
-                <Image
-                  src={aboutImage}
-                  alt="נשמה וגוף"
-                  fill
-                  className="object-cover"
-                  priority
-                />
-              </div>
-            </div>
+      {/* Full Width Image */}
+      <div className="relative w-full h-[500px] sm:h-[600px] md:h-[700px] mb-16 sm:mb-20">
+        <Image
+          src={aboutImage}
+          alt="נשמה וגוף"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
 
-            {/* Title */}
-            <div className="order-1 lg:order-2">
-              <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif font-normal text-gray-900 tracking-tight">
-                עלינו
-              </h2>
-            </div>
-          </div>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif font-normal text-gray-900 tracking-tight text-center mb-12 sm:mb-16">
+            עלינו
+          </h2>
 
           <div className="space-y-6 sm:space-y-8 text-lg sm:text-xl text-gray-700 leading-relaxed text-center font-light">
             <p>

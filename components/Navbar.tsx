@@ -37,7 +37,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link
             href="/"
-            className="text-2xl sm:text-3xl font-serif font-normal text-gray-900 tracking-tight hover:text-gray-700 transition-colors"
+            className="text-2xl sm:text-3xl font-serif font-normal text-gray-900 tracking-tight transition-all duration-300 hover:scale-105 hover:text-gray-700"
           >
             נשמה וגוף
           </Link>
@@ -48,9 +48,15 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm sm:text-base text-gray-700 hover:text-gray-900 font-light transition-colors"
+                className="relative text-sm sm:text-base text-gray-700 font-light transition-all duration-300 group"
               >
-                {link.label}
+                <span className="relative z-10">{link.label}</span>
+                {/* Hover underline effect */}
+                <span className="absolute bottom-0 right-0 w-0 h-[1.5px] bg-gray-900 transition-all duration-300 group-hover:w-full"></span>
+                {/* Hover text color change */}
+                <span className="absolute inset-0 text-gray-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  {link.label}
+                </span>
               </Link>
             ))}
           </div>
@@ -88,9 +94,15 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-base text-gray-700 hover:text-gray-900 font-light transition-colors py-2"
+                  className="relative text-base text-gray-700 font-light transition-all duration-300 py-2 group"
                 >
-                  {link.label}
+                  <span className="relative z-10">{link.label}</span>
+                  {/* Hover underline effect */}
+                  <span className="absolute bottom-2 right-0 w-0 h-[1.5px] bg-gray-900 transition-all duration-300 group-hover:w-full"></span>
+                  {/* Hover text color change */}
+                  <span className="absolute inset-0 text-gray-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300 py-2">
+                    {link.label}
+                  </span>
                 </Link>
               ))}
             </div>

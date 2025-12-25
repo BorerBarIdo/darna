@@ -5,29 +5,22 @@ export default function RevolutionSection() {
 
   return (
     <section className="py-20 sm:py-24 md:py-32 bg-white">
+      {/* Full Width Image */}
+      <div className="relative w-full h-[500px] sm:h-[600px] md:h-[700px] mb-16 sm:mb-20">
+        <Image
+          src={sectionImage}
+          alt="דיאטה לא עוד"
+          fill
+          className="object-cover"
+        />
+      </div>
+
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16 items-center mb-16 sm:mb-20">
-            {/* Title */}
-            <div>
-              <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif font-normal text-gray-900 tracking-tight">
-                דיאטה? לא עוד!
-              </h2>
-            </div>
-
-            {/* Image */}
-            <div>
-              <div className="relative w-full h-[400px] sm:h-[500px] overflow-hidden">
-                <Image
-                  src={sectionImage}
-                  alt="דיאטה לא עוד"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
-          </div>
-
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif font-normal text-gray-900 tracking-tight text-center mb-8 sm:mb-10">
+            דיאטה? לא עוד!
+          </h2>
+          
           <div className="max-w-3xl mx-auto">
             {/* Subtitle */}
             <p className="text-xl sm:text-2xl text-gray-700 mb-16 sm:mb-20 text-center leading-relaxed font-light">

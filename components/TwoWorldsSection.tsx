@@ -12,51 +12,52 @@ export default function TwoWorldsSection() {
             המערך שלנו משלב בין שני עולמות
           </h2>
 
+          {/* Full Width Images Side by Side */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 mb-12 sm:mb-16">
+            <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px]">
+              <Image
+                src={bodyImage}
+                alt="הזנת הגוף"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px]">
+              <Image
+                src={soulImage}
+                alt="הזנת הנשמה"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+
+          {/* Content Below Images */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16">
             {/* Left Column - Body Nourishment */}
-            <div className="space-y-6">
-              <div className="relative w-full h-[300px] sm:h-[400px] overflow-hidden">
-                <Image
-                  src={bodyImage}
-                  alt="הזנת הגוף"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div>
-                <h3 className="text-2xl sm:text-3xl font-serif font-normal text-gray-900 mb-3 tracking-tight">
-                  הזנת הגוף
-                </h3>
-                <p className="text-gray-600 mb-4 font-light">
-                  הצד המקצועי/תזונתי
-                </p>
-                <p className="text-gray-700 leading-relaxed font-light">
-                  פרוטוקול תזונתי פשוט שמטרתו ניקוי מערכת העיכול, איפוס הורמונלי ואיזון רמות הסוכר.
-                </p>
-              </div>
+            <div className="text-center lg:text-right">
+              <h3 className="text-2xl sm:text-3xl font-serif font-normal text-gray-900 mb-3 tracking-tight">
+                הזנת הגוף
+              </h3>
+              <p className="text-gray-600 mb-4 font-light">
+                הצד המקצועי/תזונתי
+              </p>
+              <p className="text-gray-700 leading-relaxed font-light">
+                פרוטוקול תזונתי פשוט שמטרתו ניקוי מערכת העיכול, איפוס הורמונלי ואיזון רמות הסוכר.
+              </p>
             </div>
 
             {/* Right Column - Soul Nourishment */}
-            <div className="space-y-6">
-              <div className="relative w-full h-[300px] sm:h-[400px] overflow-hidden">
-                <Image
-                  src={soulImage}
-                  alt="הזנת הנשמה"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div>
-                <h3 className="text-2xl sm:text-3xl font-serif font-normal text-gray-900 mb-3 tracking-tight">
-                  הזנת הנשמה
-                </h3>
-                <p className="text-gray-600 mb-4 font-light">
-                  הצד התודעתי/רוחני
-                </p>
-                <p className="text-gray-700 leading-relaxed font-light">
-                  כלים להבנה שהמחשבה בוראת מציאות, לזיהוי אמונות מגבילות ולהזרעת כוונה חדשה בתת-המודע.
-                </p>
-              </div>
+            <div className="text-center lg:text-right">
+              <h3 className="text-2xl sm:text-3xl font-serif font-normal text-gray-900 mb-3 tracking-tight">
+                הזנת הנשמה
+              </h3>
+              <p className="text-gray-600 mb-4 font-light">
+                הצד התודעתי/רוחני
+              </p>
+              <p className="text-gray-700 leading-relaxed font-light">
+                כלים להבנה שהמחשבה בוראת מציאות, לזיהוי אמונות מגבילות ולהזרעת כוונה חדשה בתת-המודע.
+              </p>
             </div>
           </div>
         </div>

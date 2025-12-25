@@ -12,59 +12,60 @@ export default function PracticalTasksSection() {
             הופכים תיאוריה לפעולה: המשימות היישומיות שלך
           </h2>
 
+          {/* Full Width Images Side by Side */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-0 mb-12 sm:mb-16">
+            <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px]">
+              <Image
+                src={physicalImage}
+                alt="משימה פיזית"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px]">
+              <Image
+                src={emotionalImage}
+                alt="משימה רגשית"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+
+          {/* Content Below Images */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-16">
             {/* Physical Task */}
-            <div className="space-y-6">
-              <div className="relative w-full h-[300px] sm:h-[400px] overflow-hidden">
-                <Image
-                  src={physicalImage}
-                  alt="משימה פיזית"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div>
-                <h3 className="text-xl sm:text-2xl font-serif font-normal text-gray-900 mb-4 tracking-tight">
-                  משימה פיזית - &apos;טיהור המקדש&apos;
-                </h3>
-                <ul className="space-y-3 text-gray-700 text-base leading-relaxed font-light">
-                  <li className="flex items-start gap-3">
-                    <span className="text-gray-400 mt-1">•</span>
-                    <span>סורקים את המזווה והמקרר.</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-gray-400 mt-1">•</span>
-                    <span>אוספים את כל המזון המתועש ל&apos;סלסילת הפרדה&apos; אחת, ומניחים אותה מחוץ לטווח הראייה.</span>
-                  </li>
-                </ul>
-              </div>
+            <div className="text-center">
+              <h3 className="text-xl sm:text-2xl font-serif font-normal text-gray-900 mb-4 tracking-tight">
+                משימה פיזית - &apos;טיהור המקדש&apos;
+              </h3>
+              <ul className="space-y-3 text-gray-700 text-base leading-relaxed font-light">
+                <li className="flex items-start gap-3">
+                  <span className="text-gray-400 mt-1">•</span>
+                  <span>סורקים את המזווה והמקרר.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-gray-400 mt-1">•</span>
+                  <span>אוספים את כל המזון המתועש ל&apos;סלסילת הפרדה&apos; אחת, ומניחים אותה מחוץ לטווח הראייה.</span>
+                </li>
+              </ul>
             </div>
 
             {/* Emotional Task */}
-            <div className="space-y-6">
-              <div className="relative w-full h-[300px] sm:h-[400px] overflow-hidden">
-                <Image
-                  src={emotionalImage}
-                  alt="משימה רגשית"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div>
-                <h3 className="text-xl sm:text-2xl font-serif font-normal text-gray-900 mb-4 tracking-tight">
-                  משימה רגשית - &apos;טיהור הלב&apos;
-                </h3>
-                <ul className="space-y-3 text-gray-700 text-base leading-relaxed font-light">
-                  <li className="flex items-start gap-3">
-                    <span className="text-gray-400 mt-1">•</span>
-                    <span>כותבים על דף את כל ה&apos;רעלים הרגשיים&apos;: פחדים, אשמה, סיפורים ישנים על הגוף.</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-gray-400 mt-1">•</span>
-                    <span>עורכים &apos;טקס שחרור&apos;: קורעים את הדף או שורפים אותו כסמל לניקוי.</span>
-                  </li>
-                </ul>
-              </div>
+            <div className="text-center">
+              <h3 className="text-xl sm:text-2xl font-serif font-normal text-gray-900 mb-4 tracking-tight">
+                משימה רגשית - &apos;טיהור הלב&apos;
+              </h3>
+              <ul className="space-y-3 text-gray-700 text-base leading-relaxed font-light">
+                <li className="flex items-start gap-3">
+                  <span className="text-gray-400 mt-1">•</span>
+                  <span>כותבים על דף את כל ה&apos;רעלים הרגשיים&apos;: פחדים, אשמה, סיפורים ישנים על הגוף.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-gray-400 mt-1">•</span>
+                  <span>עורכים &apos;טקס שחרור&apos;: קורעים את הדף או שורפים אותו כסמל לניקוי.</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

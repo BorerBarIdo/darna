@@ -7,11 +7,11 @@ export default function GuideSection() {
   return (
     <section className="py-20 sm:py-24 md:py-32 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16 md:gap-20 items-center">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16 items-center">
             {/* Image Side */}
             <div className="order-2 lg:order-1">
-              <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] overflow-hidden">
+              <div className="relative w-full h-[500px] sm:h-[600px] md:h-[700px] overflow-hidden">
                 <Image
                   src={guideImage}
                   alt="טלי שורץ - המדריכה שלך למסע"
@@ -66,7 +66,7 @@ export default function GuideSection() {
               </div>
 
               {/* Concluding Statement */}
-              <div className="pt-6 border-t border-gray-200">
+              <div className="pt-8 border-t border-gray-200">
                 <p className="text-lg sm:text-xl text-gray-800 leading-relaxed font-light">
                   אני כאן כדי לחלוק איתך דרך חדשה שבה הגוף, הנפש והנשמה עובדים יחד.
                 </p>

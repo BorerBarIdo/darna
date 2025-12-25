@@ -5,31 +5,24 @@ export default function SoulNourishmentSection() {
 
   return (
     <section className="py-20 sm:py-24 md:py-32 bg-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16 items-center mb-12 sm:mb-16">
-            {/* Image */}
-            <div className="order-2 lg:order-1">
-              <div className="relative w-full h-[400px] sm:h-[500px] overflow-hidden">
-                <Image
-                  src={sectionImage}
-                  alt="הזנת הנשמה"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
+      {/* Full Width Image */}
+      <div className="relative w-full h-[500px] sm:h-[600px] md:h-[700px] mb-16 sm:mb-20">
+        <Image
+          src={sectionImage}
+          alt="הזנת הנשמה"
+          fill
+          className="object-cover"
+        />
+      </div>
 
-            {/* Title */}
-            <div className="order-1 lg:order-2">
-              <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif font-normal text-gray-900 tracking-tight">
-                הזנת הנשמה: הכלי התודעתי
-              </h2>
-              <p className="text-xl sm:text-2xl font-serif font-normal text-gray-900 mt-4 tracking-tight">
-                לשבוע ה-RESET
-              </p>
-            </div>
-          </div>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif font-normal text-gray-900 tracking-tight text-center mb-4">
+            הזנת הנשמה: הכלי התודעתי
+          </h2>
+          <p className="text-xl sm:text-2xl font-serif font-normal text-gray-900 mb-12 sm:mb-16 text-center tracking-tight">
+            לשבוע ה-RESET
+          </p>
 
           <div className="space-y-8 sm:space-y-10">
             {/* Scientific Principle */}

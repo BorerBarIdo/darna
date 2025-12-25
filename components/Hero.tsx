@@ -5,7 +5,7 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 sm:pt-20">
-      {/* Background Image */}
+      {/* Background Image - Full Width */}
       <div className="absolute inset-0 z-0">
         <Image
           src={backgroundImage}
@@ -13,26 +13,25 @@ export default function Hero() {
           fill
           priority
           className="object-cover"
-          style={{ opacity: 0.25 }}
+          style={{ opacity: 0.5 }}
         />
-        <div className="absolute inset-0 bg-white/70"></div>
+        <div className="absolute inset-0 bg-white/50"></div>
       </div>
 
       {/* Content */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32 md:py-40 text-center relative z-10">
         <div className="max-w-4xl mx-auto space-y-12 sm:space-y-16 md:space-y-20">
-          {/* Logo - Darna */}
+          {/* Logo - Darna in English */}
           <div className="mb-12 sm:mb-16">
             <div className="inline-block">
-              <h1 className="text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] font-serif font-normal text-gray-900 leading-none" style={{ 
-                fontFamily: "'Playfair Display', serif",
-                letterSpacing: '0.08em',
+              <h1 className="text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] font-normal text-gray-900 leading-none" style={{ 
+                fontFamily: "'Great Vibes', cursive",
                 fontWeight: 400,
                 lineHeight: '0.9'
               }}>
-                דרנה
+                Darna
               </h1>
-              <div className="w-32 h-px bg-gray-500 mx-auto mt-6"></div>
+              <div className="w-32 h-px bg-gray-600 mx-auto mt-6"></div>
             </div>
           </div>
 
