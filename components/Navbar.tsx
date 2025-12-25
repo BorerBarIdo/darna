@@ -33,16 +33,8 @@ export default function Navbar() {
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20 sm:h-24">
-          {/* Logo */}
-          <Link
-            href="/"
-            className="text-2xl sm:text-3xl font-serif font-normal text-gray-900 tracking-tight transition-all duration-300 hover:scale-105 hover:text-gray-700"
-          >
-            נשמה וגוף
-          </Link>
-
-          {/* Desktop Menu */}
+        <div className="flex items-center justify-center h-20 sm:h-24">
+          {/* Desktop Menu - Centered */}
           <div className="hidden md:flex items-center gap-8 lg:gap-10">
             {navLinks.map((link) => (
               <Link
